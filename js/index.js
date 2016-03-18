@@ -56,8 +56,7 @@ $(function(){
 			var newTou={x:oldTou.x-1,y:oldTou.y};
 			$("#"+newTou.x+"_"+newTou.y).css({backgroundSize:"29px 29px",backgroundImage:"url(./image/5s.png)"});
 		}
-//手机
-        touch.on(document,'swipedown',function(ev){
+		 touch.on(document,'swipedown',function(ev){
             var newTou={x:oldTou.x,y:oldTou.y+1};
 			$("#"+newTou.x+"_"+newTou.y).css({backgroundSize:"29px 29px",backgroundImage:"url(./image/5.png)"});
         })
@@ -73,7 +72,6 @@ $(function(){
 			var newTou={x:oldTou.x-1,y:oldTou.y};
 			$("#"+newTou.x+"_"+newTou.y).css({backgroundSize:"29px 29px",backgroundImage:"url(./image/5s.png)"});
 		})
-
 		if(newTou.x<0||newTou.y<0||newTou.x>19||newTou.y>19||data[newTou.x+'_'+newTou.y]){
 			$('.over').css('display','block')
 			var re=confirm('再来一次！！！')
